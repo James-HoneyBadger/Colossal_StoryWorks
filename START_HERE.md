@@ -9,7 +9,7 @@ Copyright © 2025 Honey Badger Universe | MIT License
 ## ⚡ Quick Start (30 seconds)
 
 ```bash
-python3 acs_ide.py
+./scripts/acs-ide
 ```
 
 That's it! The graphical IDE will launch.
@@ -19,13 +19,13 @@ That's it! The graphical IDE will launch.
 ## 📚 What Should I Read?
 
 ### If you want to PLAY adventures:
-👉 **[docs/QUICKSTART.md](docs/QUICKSTART.md)** (5 minutes)
+👉 **[docs/user-guides/QUICKSTART.md](docs/user-guides/QUICKSTART.md)** (5 minutes)
 
 ### If you want to CREATE adventures:
-👉 **[docs/QUICKSTART.md](docs/QUICKSTART.md)** then **[docs/USER_MANUAL.md](docs/USER_MANUAL.md)** (30 minutes)
+👉 **[docs/user-guides/QUICKSTART.md](docs/user-guides/QUICKSTART.md)** then **[docs/user-guides/USER_MANUAL.md](docs/user-guides/USER_MANUAL.md)** (30 minutes)
 
 ### If you want to DEVELOP/CONTRIBUTE:
-👉 **[docs/CONTRIBUTING.md](docs/CONTRIBUTING.md)** then **[docs/TECHNICAL_REFERENCE.md](docs/TECHNICAL_REFERENCE.md)** (1 hour)
+👉 **[docs/developer-guides/CONTRIBUTING.md](docs/developer-guides/CONTRIBUTING.md)** then **[docs/reference/TECHNICAL_REFERENCE.md](docs/reference/TECHNICAL_REFERENCE.md)** (1 hour)
 
 ### If you just want an OVERVIEW:
 👉 **[README.md](README.md)** (5 minutes)
@@ -45,7 +45,7 @@ A modern text adventure creation system with:
 
 ## 📖 Full Documentation Index
 
-See **[docs/DOCUMENTATION_INDEX.md](docs/DOCUMENTATION_INDEX.md)** for all 30+ guides.
+See **[docs/README.md](docs/README.md)** for all organized documentation.
 
 ---
 
@@ -53,16 +53,16 @@ See **[docs/DOCUMENTATION_INDEX.md](docs/DOCUMENTATION_INDEX.md)** for all 30+ g
 
 ```bash
 # Launch IDE and create your first adventure
-python3 acs_ide.py
+./scripts/acs-ide
 
 # Or play an existing adventure
-python3 acs_launcher.py
+./scripts/acs-play
 ```
 
 ---
 
-**Questions?** Read [docs/USER_MANUAL.md](docs/USER_MANUAL.md) or email support@honeybadgeruniverse.com
+**Questions?** Read [docs/user-guides/USER_MANUAL.md](docs/user-guides/USER_MANUAL.md) or email support@honeybadgeruniverse.com
 
-**Ready to contribute?** Read [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md)
+**Ready to contribute?** Read [docs/developer-guides/CONTRIBUTING.md](docs/developer-guides/CONTRIBUTING.md)
 
 **Adventure awaits!** 🗺️

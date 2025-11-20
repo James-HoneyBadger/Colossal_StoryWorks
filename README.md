@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
-[![Version 2.0](https://img.shields.io/badge/version-2.0-green.svg)](docs/CHANGELOG.md)
+[![Version 2.0](https://img.shields.io/badge/version-2.0-green.svg)](PROJECT_STRUCTURE.md)
 
 ---
 
@@ -111,14 +111,15 @@ HB_Eamon/
 
 ## 📚 Documentation
 
-| Document | Description |
-|----------|-------------|
-| [User Manual](docs/USER_MANUAL.md) | Complete guide for players and creators |
-| [Technical Reference](docs/TECHNICAL_REFERENCE.md) | Architecture, APIs, internals |
-| [Quick Start](docs/QUICKSTART.md) | Get up and running in 5 minutes |
-| [Command Reference](docs/COMMANDS.md) | All 30 commands with examples |
-| [Plugin Guide](docs/PLUGIN_GUIDE.md) | Create custom extensions |
-| [Contributing](docs/CONTRIBUTING.md) | How to contribute |
+**Organized by category** - See [docs/README.md](docs/README.md) for complete index
+
+| Category | Key Documents |
+|----------|---------------|
+| **User Guides** | [Quick Start](docs/user-guides/QUICKSTART.md), [User Manual](docs/user-guides/USER_MANUAL.md), [IDE Guide](docs/user-guides/IDE_GUIDE.md) |
+| **Developer Guides** | [Contributing](docs/developer-guides/CONTRIBUTING.md), [Plugin Guide](docs/developer-guides/PLUGIN_GUIDE.md) |
+| **Reference** | [Technical Reference](docs/reference/TECHNICAL_REFERENCE.md), [Commands](docs/reference/COMMANDS.md), [Architecture](docs/reference/ARCHITECTURE.md) |
+
+**Full documentation index**: [docs/README.md](docs/README.md)
 
 ## 🎨 Themes
 
@@ -163,7 +164,7 @@ Load custom content and mechanics
 | **Parse Speed** | <1ms average |
 | **Natural Language** | Conversational input supported |
 
-See [Parser Improvements](docs/PARSER_IMPROVEMENTS.md) for details.
+See [Parser Improvements](docs/legacy/PARSER_IMPROVEMENTS.md) for details.
 
 ## 🛠️ Technology Stack
 
@@ -198,7 +199,7 @@ Sample adventures included:
 
 ## 🤝 Contributing
 
-We welcome contributions! See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for:
+We welcome contributions! See [CONTRIBUTING.md](docs/developer-guides/CONTRIBUTING.md) for:
 
 - Code style guide
 - Pull request process
@@ -336,7 +337,7 @@ The guard strikes you for 5 damage.
 **Start your adventure today!**
 
 ```bash
-python3 acs_ide.py
+./scripts/acs-ide
 ```
 
 *Adventure awaits...*
