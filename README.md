@@ -31,7 +31,7 @@ cd HB_Adventure_Games
 # Or launch directly:
 ./scripts/acs-ide        # Open IDE
 ./scripts/acs-play       # Play adventures
-./scripts/acs-convert    # Convert Eamon DSK files
+./scripts/acs-play      # Play adventures
 ```
 
 That's it! No installation needed (Python 3.6+ required).
@@ -87,7 +87,7 @@ The parser understands natural language:
 ## 📂 Project Structure
 
 ```
-HB_Eamon/
+HB_Adventure_Games/
 ├── src/acs/              # Source code
 │   ├── core/            # Game engine (parser, state, events)
 │   ├── systems/         # Game systems (combat, NPCs, environment)
@@ -103,7 +103,7 @@ HB_Eamon/
 ├── tests/                # Test suite
 ├── config/               # Configuration
 ├── examples/             # Example adventures
-├── archive/              # Original Eamon games
+├── archive/              # Archived legacy code
 ├── quickstart.sh         # Quick start menu
 ├── README.md             # This file
 └── LICENSE               # MIT License
@@ -245,13 +245,13 @@ See [LICENSE](LICENSE) for full text.
 - Universal adventure creation system
 
 ### Special Thanks
-- Eamon community for inspiration
+- Interactive fiction community for inspiration
 - Beta testers and contributors
 - Open source community
 
 ## 📞 Contact
 
-- **Website**: honeybadgeruniverse.com/eamon
+- **GitHub**: github.com/James-HoneyBadger/HB_Adventure_Games
 - **Email**: support@honeybadgeruniverse.com
 - **GitHub**: github.com/honeybadgeruniverse/eamon-acs
 

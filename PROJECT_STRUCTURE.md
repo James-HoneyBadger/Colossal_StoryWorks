@@ -1,6 +1,6 @@
 # 📁 Project Structure
 
-**Eamon Adventure Creation System v2.0**
+**Adventure Construction System v2.0**
 Last Updated: January 2025
 
 ---
@@ -8,7 +8,7 @@ Last Updated: January 2025
 ## 🗂️ Directory Organization
 
 ```
-HB_Eamon/
+HB_Adventure_Games/
 ├── adventures/           # Adventure game JSON files
 ├── archive/             # Historical/archived code
 ├── config/              # Configuration files
@@ -225,7 +225,7 @@ Player save game files (auto-saved and manual)
 ### **archive/**
 Historical code and old game files:
 - `old_core_engine.py` - Original engine version
-- `Original_Games/` - Classic Eamon adventures
+- `archive/` - Legacy code and historical files
 
 ---
 
