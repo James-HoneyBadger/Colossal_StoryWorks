@@ -6,14 +6,26 @@ Extends the classic adventure system with modern features while maintaining
 """
 
 import json
+import sys
+from pathlib import Path
 from typing import Dict, List, Optional
 from dataclasses import dataclass, field, asdict
 from enum import Enum
 from datetime import datetime
 
+# Add src to path for imports
+sys.path.insert(0, str(Path(__file__).parent / "src"))
 
 # Import original types for compatibility
-from acs_engine import ItemType, MonsterStatus, Item, Monster, Room, Player
+from acs.core.engine import (
+    ItemType,
+    MonsterStatus,
+    Item,
+    Monster,
+    Room,
+    Player,
+    EamonGame,
+)
 
 
 class PuzzleType(Enum):
@@ -140,7 +152,7 @@ class EnhancedMonster(Monster):
             id=data["id"],
             name=data["name"],
             description=data["description"],
-            room_id=data["room_id"],
+            room_id=data.get("room_id", 0),
             hardiness=data.get("hardiness", 10),
             agility=data.get("agility", 10),
             friendliness=friendliness,
@@ -237,7 +249,7 @@ class Puzzle:
         return cls(
             id=data["id"],
             puzzle_type=PuzzleType(data.get("type", "custom")),
-            room_id=data["room_id"],
+            room_id=data.get("room_id", 0),
             description=data["description"],
             exit_direction=data.get("exit_direction"),
             required_item=data.get("required_item"),
@@ -396,29 +408,14 @@ class EnhancedPlayer(Player):
         self.agility += 2
 
 
-class EnhancedEamonGame:
+class EnhancedEamonGame(EamonGame):
     """Enhanced game engine with extended features"""
 
     def __init__(self, adventure_file: str):
-        self.adventure_file = adventure_file
-        self.rooms: Dict[int, EnhancedRoom] = {}
-        self.items: Dict[int, EnhancedItem] = {}
-        self.monsters: Dict[int, EnhancedMonster] = {}
+        super().__init__(adventure_file)
         self.puzzles: Dict[int, Puzzle] = {}
         self.dialogues: Dict[int, Dialogue] = {}
         self.quests: Dict[int, Quest] = {}
-        self.player: EnhancedPlayer = EnhancedPlayer()
-
-        self.adventure_title: str = ""
-        self.adventure_intro: str = ""
-        self.turn_count: int = 0
-        self.game_over: bool = False
-
-        # Enhanced settings
-        self.allow_save: bool = True
-        self.has_puzzles: bool = False
-        self.has_quests: bool = False
-        self.has_dialogues: bool = False
 
     def load_adventure(self):
         """Load adventure with enhanced features"""

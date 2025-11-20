@@ -116,7 +116,7 @@ class AdventureLauncher:
 
     def launch_adventure(self, adventure_file):
         """Launch a specific adventure"""
-        engine_path = self.base_dir / "acs_engine.py"
+        engine_path = self.base_dir / "acs_engine_enhanced.py"
 
         if not engine_path.exists():
             print(f"Error: Game engine not found at {engine_path}")
@@ -129,12 +129,14 @@ class AdventureLauncher:
         # Import and run the game engine
         import importlib.util
 
-        spec = importlib.util.spec_from_file_location("acs_engine", engine_path)
+        spec = importlib.util.spec_from_file_location(
+            "acs_engine_enhanced", engine_path
+        )
         acs_module = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(acs_module)
 
         # Create and run game
-        game = acs_module.EamonGame(str(adventure_file))
+        game = acs_module.EnhancedEamonGame(str(adventure_file))
         game.run()
 
         print("\n" + "=" * 70)
