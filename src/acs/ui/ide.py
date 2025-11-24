@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Adventure Construction Set - Graphical Adventure Editor
+Colossal StoryWorks - Graphical Adventure Editor
 A complete IDE for creating, editing, and playing text adventures
 """
 
@@ -16,11 +16,11 @@ from io import StringIO
 
 
 class AdventureIDE:
-    """Main IDE window for Adventure Construction Set"""
+    """Main IDE window for Colossal StoryWorks"""
 
     def __init__(self, root):
         self.root = root
-        self.root.title("🎮 Adventure Construction Set - IDE")
+        self.root.title("🎮 Colossal StoryWorks - IDE")
         self.root.geometry("1400x900")
 
         # Theme definitions
@@ -1323,11 +1323,18 @@ class AdventureIDE:
         self.collect_adventure_data()
 
         try:
-            with open(temp_file, "w") as f:
+            with open(temp_file, "w", encoding="utf-8") as f:
                 json.dump(self.adventure, f, indent=2)
 
-            # Launch game
-            subprocess.Popen(["./play_adventure.sh", "_temp_test.json"])
+            # Launch game using the core engine CLI so authors can play the temp build
+            subprocess.Popen(
+                [
+                    sys.executable,
+                    "-m",
+                    "src.acs.core.engine",
+                    temp_file,
+                ]
+            )
             self.update_status("Testing adventure...")
         except Exception as e:
             messagebox.showerror("Error", f"Failed to test:\n{e}")
@@ -1366,7 +1373,7 @@ class AdventureIDE:
 
     def show_help(self):
         """Show help dialog"""
-        help_text = """Adventure Construction Set - Quick Start
+        help_text = """Colossal StoryWorks - Quick Start
 
 Creating Adventures:
 1. Fill in Adventure Info (title, author, intro)
@@ -1395,7 +1402,7 @@ F5 - Test Adventure
         """Show about dialog"""
         messagebox.showinfo(
             "About",
-            "🎮 Adventure Construction Set v2.0\n\n"
+            "🎮 Colossal StoryWorks v2.0\n\n"
             "A complete IDE for creating text adventures\n\n"
             "Features:\n"
             "• Visual room editor\n"

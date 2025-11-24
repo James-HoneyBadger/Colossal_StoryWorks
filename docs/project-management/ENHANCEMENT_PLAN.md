@@ -1,4 +1,4 @@
-# Adventure Construction System - Enhancement Plan
+# Colossal StoryWorks - Enhancement Plan
 
 ## Overview
 Expand the game system with modern features for creating rich interactive fiction experiences.
@@ -335,7 +335,7 @@ Expand the game system with modern features for creating rich interactive fictio
 ## File Structure
 
 ```
-HB_Adventure_Games/
+Colossal_StoryWorks/
 ├── acs_engine_enhanced.py    # Enhanced engine
 ├── src/acs/
 │   ├── core/

@@ -1,226 +1,94 @@
 # Example Gameplay Session
 
-This document shows what a typical game session looks like.
+This walkthrough captures a condensed play session inside the Colossal StoryWorks Showcase adventure. It illustrates how exploration, quest pickup, and NPC conversations flow with the enhanced systems.
 
 ## Starting the Game
 
 ```bash
-$ ./play_adventure.sh beginners_cave.json
+$ python -m src.acs.core.engine adventures/colossal_storyworks_showcase.json
 ```
+
+You can also launch the IDE with `python -m src.acs.ui.ide`, switch to the **Play** tab, and load the same adventure. The command-line transcript below mirrors what you will see in either interface.
 
 ## Sample Gameplay
 
+*Output below is abridged for readability while staying faithful to the bundled adventure.*
+
 ```
 ============================================================
-                    The Beginner's Cave                     
+            Colossal StoryWorks Showcase Adventure
 ============================================================
 
-You are standing at the entrance to a mysterious cave. Rumors speak of
-treasure and danger within. As a novice adventurer, this seems like the
-perfect place to test your skills.
+Grand Concourse
+---------------
+A vaulted atrium filled with holographic banners that celebrate legendary adventures. Interactive kiosks line the walls, while portals lead deeper into the complex.
+Ambient: A warm synth melody hums through hidden speakers.
+Obvious exits: north, east, west, up
 
-Your quest: explore the cave, defeat any monsters, and return with treasure!
-
-
-Cave Entrance
--------------
-You stand at the mouth of a dark cave. Cool air flows from within.
-The entrance is partially concealed by vines and moss. A narrow passage
-leads deeper into the darkness to the north.
-
-Obvious exits: north, south
-
-> help
-
-============================================================
-ADVENTURE COMMANDS
-============================================================
-
-Movement:
-  n, north, s, south, e, east, w, west, u, up, d, down
-
-Actions:
-  look (l)        - Look around
-  get/take <item> - Pick up an item
-  drop <item>     - Drop an item
-  attack <target> - Attack a monster
-
-Info:
-  inventory (i)   - Show what you're carrying
-  status          - Show your character stats
-  help (h, ?)     - Show this help
-
-Other:
-  quit (q)        - Exit the game
-============================================================
+> quests
+No active quests yet. Talk with the campus staff to pick one up.
 
 > north
-
-Dark Corridor
+Idea Fountain
 -------------
-A narrow, winding corridor stretches before you. The walls are damp
-and covered with strange fungus that glows faintly, providing just enough
-light to see. You hear the drip of water echoing from somewhere ahead.
+A tranquil garden where inspiration literally flows. Wisps of text swirl above a luminous pool, forming snippets of future storylines.
+Obvious exits: south, north, east
 
-Obvious exits: north, south, east
+> search fountain
+You trace the glowing runes around the basin. A hidden panel slides open and reveals a vault keycard!
 
-You see:
-  - leather armor
-  - old map
+> get keycard
+Taken: vault keycard.
 
-Present:
-  - giant rat (hostile)
+> south
+Grand Concourse
+---------------
+A vaulted atrium filled with holographic banners that celebrate legendary adventures.
+Obvious exits: north, east, west, up
 
-> get map
-You take the old map.
+> west
+Library of Echoes
+-----------------
+Shelves spiral upward into darkness, packed with design journals and glowing codices. Archivist Lyra looks up from her catalog.
+Obvious exits: east, west
 
-> get armor
-You take the leather armor.
+> talk lyra
+Archivist Lyra says: Ah, a fresh face! Welcome to the Library of Echoes. Every tale ever told whispers here.
 
-> attack rat
+> ask lyra about quest
+Archivist Lyra says: If you're willing, recover the data crystal and arcane coil. They power the new narrative analytics wing.
+Quest added: Reboot the Archive.
 
-You attack the giant rat!
-You hit for 3 damage!
-The giant rat hits you for 2 damage!
-
-> attack rat
-
-You attack the giant rat!
-You hit for 4 damage!
-The giant rat is dead!
-You found 5 gold pieces!
-
-> inventory
-
-You are carrying:
-  - old map
-  - leather armor
-
-Total weight: 9
-Gold: 205
-
-> status
-
-Adventurer
-----------------------------------------
-Health: 10/12
-Hardiness: 12
-Agility: 12
-Charisma: 12
-Gold: 205
+> quests
+Active Quests:
+1. Reboot the Archive — Recover the Arcane Coil from the Puzzle Gallery and the Data Crystal from the Archive Terminal.
 
 > east
-
-Storage Chamber
+Grand Concourse
 ---------------
-This appears to be an old storage room. Broken crates and barrels are
-scattered about. In the corner, you notice something glinting in the dim light.
+Ambient: A warm synth melody hums through hidden speakers.
+Obvious exits: north, east, west, up
 
-Obvious exits: west
+> east
+Workshop Row
+------------
+Benches overflow with clockwork contraptions, spell matrices, and plush dice. Quartermaster Dex stands ready to outfit any creator.
+Obvious exits: west, east, south
 
-You see:
-  - rusty sword
-  - healing potion
+> talk dex
+Quartermaster Dex says: Dex here! Need gear? Inspiration? Sparkling water? I'm your quartermaster.
 
-> get sword
-You take the rusty sword.
-
-> get potion
-You take the healing potion.
-
-> inventory
-
-You are carrying:
-  - old map
-  - leather armor
-  - rusty sword
-  - healing potion
-
-Total weight: 15
-Gold: 205
-
-> west
-
-Dark Corridor
--------------
-(Room description...)
-
-> north
-
-Underground Stream
-------------------
-A small underground stream cuts across the cave floor here. The water
-is clear and cold. A wooden bridge crosses to the north, though it looks
-rather rickety. To the west, you see a faint glow.
-
-Obvious exits: south, north, west
-
-> west
-
-Crystal Grotto
---------------
-This chamber is filled with beautiful crystals that emit a soft blue glow.
-The walls sparkle with thousands of tiny reflections. It's quite peaceful here.
-
-Obvious exits: east
-
-You see:
-  - gold coins
-
-> get coins
-You take the gold coins.
+> trade dex
+Quartermaster Dex says: I've got shield emitters, pulse pistols, and nano tonics. Bring me rare drops and I'll stock something special.
 
 > inventory
-
 You are carrying:
-  - old map
-  - leather armor
-  - rusty sword
-  - healing potion
-  - gold coins
-
-Total weight: 16
-Gold: 205
-
-> status
-
-Adventurer
-----------------------------------------
-Health: 10/12
-Hardiness: 12
-Agility: 12
-Charisma: 12
-Gold: 255
-Weapon: None
-Armor: None
-
-> quit
-
-Thanks for playing!
+  - vault keycard
+Gold: 0  |  Weight: 1
 ```
 
-## Tips from This Session
+### Highlights
 
-1. **Always pick up items** - The map and armor could be useful
-2. **Fight monsters** - You gain gold and experience
-3. **Explore thoroughly** - Check all directions
-4. **Check your status** - Know your health before big fights
-5. **Manage inventory** - Keep track of what you have
-
-## Advanced Play
-
-For more challenging gameplay:
-- Equip weapons before fighting
-- Wear armor for protection
-- Save healing potions for emergencies
-- Explore all rooms before fighting the boss
-- Return to the entrance when ready to leave
-
-## Creating Your Own Adventure
-
-After playing, you might want to create your own! See `README.md` for 
-the complete JSON format and guidelines.
-
----
-
-Enjoy exploring interactive fiction adventures!
+- Discovered a hidden item with the environment-aware `search` command.
+- Accepted the “Reboot the Archive” quest from Archivist Lyra, demonstrating quest activation.
+- Consulted Quartermaster Dex for trading options while keeping an eye on inventory updates.

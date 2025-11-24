@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Adventure Construction Set - Inform 7 Integration
-Integrates Inform 7-style natural language understanding into ACS engine.
+Colossal StoryWorks - Inform 7 Integration
+Integrates Inform 7-style natural language understanding into Colossal StoryWorks engine.
 """
 
 from typing import List, Optional, Tuple
@@ -14,7 +14,7 @@ from acs.core.natural_language import (
 
 class InformEnhancedEngine:
     """
-    Mixin class that adds Inform 7 capabilities to ACS engine.
+    Mixin class that adds Inform 7 capabilities to Colossal StoryWorks engine.
 
     This provides:
     - Natural language command understanding
@@ -122,7 +122,7 @@ class InformEnhancedEngine:
         Process natural language command and return
         (verb, direct_object, indirect_object).
 
-        This bridges the Inform 7 parser to the existing ACS command
+        This bridges the Inform 7 parser to the existing Colossal StoryWorks command
         system.
         """
         parsed = self.parse_inform_command(command)
@@ -131,7 +131,7 @@ class InformEnhancedEngine:
         if not parsed.verb or parsed.confidence < 0.5:
             return ("unknown", None, None)
 
-        # Convert parsed command to ACS format
+        # Convert parsed command to Colossal StoryWorks format
         verb = parsed.verb
         direct_obj = parsed.direct_object
         indirect_obj = parsed.indirect_object
@@ -280,7 +280,7 @@ def create_inform_enhanced_engine(base_engine_class):
 # Convenience function for quick testing
 def demo_inform_integration():
     """Demonstrate Inform 7 integration"""
-    print("=== Adventure Construction Set + Inform 7 Integration ===\n")
+    print("=== Colossal StoryWorks + Inform 7 Integration ===\n")
 
     # Create enhanced engine (would use real GameEngine in production)
     class DummyEngine:

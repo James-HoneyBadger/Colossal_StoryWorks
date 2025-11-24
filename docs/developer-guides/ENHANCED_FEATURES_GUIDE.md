@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Adventure Construction System includes powerful features for creating rich interactive fiction experiences.
+The Colossal StoryWorks includes powerful features for creating rich interactive fiction experiences.
 
 ## What's New?
 
@@ -263,19 +263,19 @@ The existing IDE fully supports creating enhanced adventures. Just edit the JSON
 
 ## Example Enhanced Adventure
 
-See `adventures/wizards_tower_enhanced.json` for a complete example featuring:
-- Multiple rooms with different light levels
-- NPCs with dialogue trees
-- Quest system with objectives
-- Puzzles (locked door + riddle)
-- Enhanced items with special abilities
-- Container items
-- Equipment system
+See `adventures/colossal_storyworks_showcase.json` for a complete example featuring:
+- Multiple districts with varied light levels and environmental effects
+- NPCs offering dialogue, trading, and quest hooks
+- Multi-step questlines with optional objectives
+- Puzzle variety including locks, riddles, and sequencing logic
+- Enhanced items with durability, special abilities, and equipment slots
+- Container items and environmental storytelling objects
+- Integrated achievement tracking and journal entries
 
 ## Testing Enhanced Features
 
 ### In the IDE
-1. Load `wizards_tower_enhanced.json`
+1. Load `colossal_storyworks_showcase.json`
 2. Go to Play Adventure tab
 3. Click "▶ Start Game"
 4. Try these commands:
@@ -396,9 +396,8 @@ Coming soon:
 - This file - Enhanced features
 
 ### Examples
-- `wizards_tower_enhanced.json` - Full example
-- `beginners_cave.json` - Original format
-- Study both to see differences
+- `colossal_storyworks_showcase.json` - Comprehensive enhanced example
+- Compare against your own legacy adventures to see differences
 
 ### Community
 - Share your enhanced adventures!

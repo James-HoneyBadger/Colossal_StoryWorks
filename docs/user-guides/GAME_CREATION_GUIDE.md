@@ -1,8 +1,8 @@
 # 🎮 Game Creation Guide
 
-**Adventure Construction Set - Complete Creator's Guide**
+**Colossal StoryWorks - Complete Creator's Guide**
 
-Learn how to create your own text adventures from scratch using the ACS toolset.
+Learn how to create your own text adventures from scratch using the Colossal StoryWorks toolset.
 
 ---
 

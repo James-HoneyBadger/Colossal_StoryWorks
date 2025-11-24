@@ -1,12 +1,12 @@
-# Adventure Construction Set - Documentation
+# Colossal StoryWorks - Documentation
 
-**Complete documentation for the Adventure Construction Set**
+**Complete documentation for the Colossal StoryWorks**
 
 ---
 
 ## 📖 Quick Navigation
 
-### New to ACS?
+### New to Colossal StoryWorks?
 👉 Start here: [User Guides → Quick Start](user-guides/QUICKSTART.md)
 
 ### Want to play adventures?

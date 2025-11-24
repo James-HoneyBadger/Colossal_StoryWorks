@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Adventure Construction Set - Game Engine
+Colossal StoryWorks - Game Engine
 A Python implementation of classic text adventure game mechanics
 For creating and playing interactive fiction adventures
 """

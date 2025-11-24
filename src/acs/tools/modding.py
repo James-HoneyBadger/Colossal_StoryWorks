@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Adventure Construction Set - Modding & Scripting Support
+Colossal StoryWorks - Modding & Scripting Support
 Allow adventure creators to extend functionality with Python scripts
 """
 
@@ -327,7 +327,7 @@ class ModdingSystem:
 
 # Example mod file format:
 """
-# example_mod.py - Example mod for ACS
+# example_mod.py - Example mod for Colossal StoryWorks
 
 # Register a hook that runs when entering a room
 hook = ScriptHook(

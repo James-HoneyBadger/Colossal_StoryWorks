@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Adventure Construction Set - Command History & Prediction System
+Colossal StoryWorks - Command History & Prediction System
 Provides auto-complete, command history, and smart suggestions
 """
 

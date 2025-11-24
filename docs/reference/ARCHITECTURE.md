@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Adventure Construction Set (ACS) is built around a **modular, data-driven engine** that keeps authoring tools, runtime systems, and extension points cleanly separated. Core design goals:
+Colossal StoryWorks is built around a **modular, data-driven engine** that keeps authoring tools, runtime systems, and extension points cleanly separated. Core design goals:
 
 - **Loose coupling** through a service registry and event bus hooks
 - **Extensibility** via plugins and drop-in gameplay systems
@@ -35,7 +35,7 @@ The Adventure Construction Set (ACS) is built around a **modular, data-driven en
 ## Directory Map
 
 ```
-HB_Adventure_Games/
+Colossal_StoryWorks/
 ├── adventures/               # Bundled adventure JSON scenarios
 ├── config/                   # Engine defaults + per-plugin settings
 ├── docs/                     # Guides, references, manuals
@@ -72,7 +72,7 @@ Minimal usage when embedding the engine:
 ```python
 from acs.core.engine import AdventureGame
 
-game = AdventureGame("adventures/beginners_cave.json")
+game = AdventureGame("adventures/colossal_storyworks_showcase.json")
 game.load_adventure()
 game.look()           # display current room
 game.move("north")    # process a command

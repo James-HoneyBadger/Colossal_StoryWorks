@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Adventure Construction Set - Enhanced Natural Language Parser
+Colossal StoryWorks - Enhanced Natural Language Parser
 Provides improved command parsing with better sentence understanding
 and support for party/companion system
 """
@@ -345,7 +345,7 @@ class NaturalLanguageParser:
     def get_help_text(self) -> str:
         """Generate comprehensive help text"""
         return """
-ADVENTURE CONSTRUCTION SET - COMMANDS
+COLOSSAL STORYWORKS - COMMANDS
 
 You can type natural language! Examples:
   "go north" or "walk to the north" or just "north"

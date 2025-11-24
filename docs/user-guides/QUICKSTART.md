@@ -11,11 +11,11 @@ License: MIT
 
 ```bash
 # Requirements: Python 3.10+
-cd HB_Adventure_Games
+cd Colossal_StoryWorks
 python -m src.acs.ui.ide
 ```
 
-- ACS ships with batteries included—no mandatory dependencies.
+- Colossal StoryWorks ships with batteries included—no mandatory dependencies.
 - Optional: run `./quickstart.sh` for a menu of launch shortcuts.
 
 ---
@@ -144,7 +144,7 @@ Still stuck? Run `./quickstart.sh` and choose **Reset Cache**.
 **Adventure will not load**
 - Validate the JSON via [jsonlint.com](https://jsonlint.com/)
 - Confirm every exit has a matching room
-- Load a bundled adventure (for example `adventures/beginners_cave.json`) to compare structure
+- Load the bundled showcase adventure (see `adventures/colossal_storyworks_showcase.json`) to compare structure
 
 ---
 

@@ -1,4 +1,4 @@
-# Adventure Construction System - Project Summary
+# Colossal StoryWorks - Project Summary
 
 ## What Was Created
 
@@ -7,7 +7,7 @@ A complete, working adventure game creation and gameplay system.
 ## Project Structure
 
 ```
-HB_Adventure_Games/
+Colossal_StoryWorks/
 ├── acs_engine_enhanced.py   # Enhanced game engine
 ├── src/acs/
 │   ├── core/                # Core game systems

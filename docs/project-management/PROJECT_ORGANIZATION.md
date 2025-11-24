@@ -9,80 +9,23 @@
 ## New Directory Structure
 
 ```
-HB_Adventure_Games/
-├── 📁 bin/                    # Executable scripts
-│   ├── convert_dsk.sh
-│   ├── demo.sh
-│   ├── launch_ide.sh
-│   ├── list_adventures.sh
-│   ├── play_adventure.sh
-│   ├── quickstart.sh
-│   └── verify_installation.sh
-│
-├── 📁 core/                   # Core game engine
-│   ├── __init__.py
-│   └── (future modular components)
-│
-├── 📁 systems/                # Enhancement systems
-│   ├── __init__.py
-│   └── (future system modules)
-│
-├── 📁 ui/                     # User interface
-│   ├── __init__.py
-│   └── (future UI components)
-│
-├── 📁 utils/                  # Utilities
-│   ├── __init__.py
-│   └── (future utility modules)
-│
-├── 📁 plugins/                # Plugin system
-│   ├── __init__.py
-│   ├── base.py
-│   └── examples/
-│
-├── 📁 tests/                  # Test suite
-│   ├── unit/                 # Unit tests
-│   ├── integration/          # Integration tests
-│   ├── test_parser_detailed.py
-│   ├── test_all_commands.py
-│   ├── test_all_systems.py
-│   ├── test_converter.py
-│   ├── test_engine.py
-│   ├── test_simple.py
-│   └── demo_architecture.py
-│
-├── 📁 docs/                   # Documentation
-│   ├── USER_MANUAL.md        # ✨ NEW - Comprehensive user guide
-│   ├── TECHNICAL_REFERENCE.md # ✨ NEW - Developer documentation
-│   ├── CONTRIBUTING.md        # ✨ NEW - Contribution guidelines
-│   ├── QUICKSTART.md         # Updated quick start
-│   ├── COMMANDS.md
-│   ├── ARCHITECTURE.md
-│   ├── PLUGIN_GUIDE.md
-│   ├── PARSER_IMPROVEMENTS.md
-│   ├── PARSER_TEST_REPORT.md
-│   └── (24 other documentation files)
-│
-├── 📁 adventures/             # Adventure files
-│   └── *.json
-│
-├── 📁 saves/                  # Save games
-│   └── *.json
-│
-├── 📁 config/                 # Configuration
-│   └── plugins/
-│
-├── 📁 archive/                # Archived files
-│
-├── 📄 python -m src.acs.ui.ide              # IDE launcher
-├── 📄 acs_engine_enhanced.py          # Game engine
-├── 📄 acs_parser.py          # Command parser
-├── 📄 python -m src.acs.ui.ide         # Game launcher
-├── 📄 acs_*.py               # Other modules
-├── 📄 dsk_converter.py       # DSK converter
-├── 📄 requirements.txt       # Dependencies
-├── 📄 LICENSE                # ✨ NEW - MIT License
-└── 📄 README.md              # ✨ UPDATED - Project overview
+Colossal_StoryWorks/
+├── adventures/               # Bundled showcase adventure JSON
+│   └── colossal_storyworks_showcase.json
+├── archive/                  # Legacy engine snapshots and Apple II disks
+├── config/                   # Engine & system configuration (e.g., engine.json)
+├── docs/                     # Manuals, user guides, reference material
+├── plugins/                  # Optional plugin packages
+├── src/acs/                  # Engine, systems, IDE modules, and tooling
+├── tests/                    # Pytest suites covering parser and systems
+├── ADVENTURE_LIBRARY.md      # Adventure catalog overview
+├── DOCUMENTATION_STATUS.txt  # Living documentation tracker
+├── PROJECT_STRUCTURE.md      # Repo walkthrough
+├── README.md                 # Project overview
+├── START_HERE.md             # Onboarding checklist
+├── acs_engine_enhanced.py    # Legacy CLI entry point
+├── quickstart.sh             # Launcher shortcuts
+└── ...                       # Additional markdown notes and assets
 
 ```
 
@@ -184,9 +127,9 @@ HB_Adventure_Games/
 |----------|-------|-------------|
 | **Documentation** | 30+ | Guides, references, tutorials |
 | **Python Modules** | 15+ | Core system files |
-| **Shell Scripts** | 7 | Convenience launchers |
+| **Helper Scripts** | 1 | `quickstart.sh` convenience menu |
 | **Tests** | 7 | Comprehensive test suite |
-| **Adventures** | Multiple | Sample and template files |
+| **Adventures** | 1 | Colossal StoryWorks Showcase adventure |
 
 ---
 

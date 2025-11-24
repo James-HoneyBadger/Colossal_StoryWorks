@@ -1,6 +1,6 @@
-# 🚀 START HERE - Adventure Construction System
+# 🚀 START HERE - Colossal StoryWorks
 
-**Welcome!** You've found the Adventure Construction System v2.0
+**Welcome!** You've found the Colossal StoryWorks v2.0
 
 Copyright © 2025 Honey Badger Universe | MIT License
 

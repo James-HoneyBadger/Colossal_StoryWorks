@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Adventure Construction Set - Enhanced Combat System
+Colossal StoryWorks - Enhanced Combat System
 Provides tactical combat, status effects, and intelligent enemy AI
 """
 

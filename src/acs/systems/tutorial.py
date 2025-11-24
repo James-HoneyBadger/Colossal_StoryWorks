@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Adventure Construction Set - Tutorial & Contextual Help System
+Colossal StoryWorks - Tutorial & Contextual Help System
 Progressive feature discovery, contextual hints, and example commands
 """
 

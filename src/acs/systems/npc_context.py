@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Adventure Construction Set - NPC Memory & Context System
+Colossal StoryWorks - NPC Memory & Context System
 Provides NPCs with memory, emotional states, and relationship tracking
 """
 

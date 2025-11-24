@@ -1,4 +1,4 @@
-# 📚 Adventure Construction System - Documentation Index
+# 📚 Colossal StoryWorks - Documentation Index
 
 **Complete guide to all documentation**
 

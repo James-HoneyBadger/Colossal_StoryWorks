@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Adventure Construction Set - Environmental Storytelling System
+Colossal StoryWorks - Environmental Storytelling System
 Adds dynamic room states, inspectable objects, time/weather effects
 """
 

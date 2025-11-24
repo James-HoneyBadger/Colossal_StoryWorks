@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# Quick start script for Adventure Construction Set
+# Quick start script for Colossal StoryWorks
 
 cat << 'EOF'
 ╔═══════════════════════════════════════════════════════════╗
 ║                                                           ║
-║         ADVENTURE CONSTRUCTION SET                        ║
-║         Quick Start                                       ║
+║                 COLOSSAL STORYWORKS                       ║
+║                    QUICK START                            ║
 ║                                                           ║
 ╚═══════════════════════════════════════════════════════════╝
 

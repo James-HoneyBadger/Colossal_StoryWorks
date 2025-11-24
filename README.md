@@ -1,44 +1,44 @@
-# Adventure Construction Set (ACS)
+# Colossal StoryWorks
 
 **Modern toolkit for building and playing rich text adventures**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 
-ACS combines a desktop IDE, a natural language parser, and a rules-driven engine so that authors can craft adventures without writing code while power users extend the simulation through Python modules.
+Colossal StoryWorks combines a desktop IDE, a natural language parser, and a rules-driven engine so that authors can craft adventures without writing code while power users extend the simulation through Python modules. The Python package namespace remains `src.acs` for backward compatibility, even as the project brand has shifted to Colossal StoryWorks.
 
 ---
 
 ## 🎮 Overview
 
-- 🖥️ **Graphical IDE only** – launch the Tk-based editor to design rooms, items, NPCs, quests, and play-test in the same workspace.
-- 🧠 **Natural language parser** – `src/acs/core/parser.py` translates conversational input into structured commands for the engine.
-- ⚙️ **Modular systems** – combat, achievements, journal, context hints, accessibility, and environment logic live in `src/acs/systems/`.
-- 🔌 **Extensible infrastructure** – service registry, event bus, and plugin scaffolding allow additional systems without touching the engine core.
-- 📚 **Data-driven content** – adventures are JSON documents; configuration and plugin toggles live under `config/`.
+- 🖥️ **Graphical IDE** – Design rooms, items, NPCs, quests, and play-test in the same Tk-based workspace.
+- 🧠 **Natural language parser** – `src/acs/core/parser.py` translates conversational input into structured engine commands.
+- ⚙️ **Modular systems** – Combat, achievements, journal, tutorials, NPC context, and environment logic live in `src/acs/systems/`.
+- 🔌 **Extensible infrastructure** – Service registry, event bus, and plugin scaffolding enable new systems without touching the core engine.
+- 📚 **Data-driven content** – Adventures are JSON documents; configuration and plugin toggles live under `config/`.
 
 ---
 
 ## 🚀 Quick Start
 
-1. Clone the repository and move into it:
+1. **Clone the repository**
    ```bash
-   git clone https://github.com/James-HoneyBadger/HB_Adventure_Games.git
-   cd HB_Adventure_Games
+   git clone https://github.com/James-HoneyBadger/Colossal_StoryWorks.git
+   cd Colossal_StoryWorks
    ```
-2. (Optional) Create a virtual environment and install local tooling:
+2. **(Optional) Create a virtual environment**
    ```bash
    python3 -m venv .venv
    source .venv/bin/activate
    python -m pip install --upgrade pip
    ```
-   ACS relies on the Python standard library. Install additional tooling (flake8, pytest) if you do not have them globally.
-3. Launch the IDE:
+   Install local tooling such as `flake8` or `pytest` if you do not already have them available.
+3. **Launch the IDE**
    ```bash
    python -m src.acs.ui.ide
    ```
    The interface starts in creation mode; switch to **Play** to test your adventure.
-4. Prefer a guided entry point? Run `./quickstart.sh` for launcher shortcuts.
+4. **Prefer a guided entry point?** Run `./quickstart.sh` for launcher shortcuts.
 
 ---
 
@@ -91,24 +91,18 @@ ACS combines a desktop IDE, a natural language parser, and a rules-driven engine
 ## 📂 Project Layout
 
 ```
-HB_Adventure_Games/
-├── adventures/               # Bundled adventure JSON files
+Colossal_StoryWorks/
+├── adventures/               # Bundled flagship adventure JSON
 ├── archive/                  # Legacy engine snapshots and assets
-├── config/                   # Engine & plugin configuration (JSON/YAML)
-│   └── plugins/
+├── config/                   # Engine & plugin configuration (JSON)
 ├── docs/                     # Manuals, technical references, guides
-├── plugins/                  # Standalone plugin packages
-├── saves/                    # Player save files
-├── scripts/                  # Utility scripts and helpers
-├── src/acs/
-│   ├── core/                 # Engine, parser, state, infrastructure
-│   ├── data/                 # Config/data access services
-│   ├── systems/              # Gameplay systems (combat, achievements, …)
-│   ├── tools/                # Modding and command utilities
-│   └── ui/                   # Graphical IDE and accessibility modules
+├── plugins/                  # Optional plugin packages
+├── src/acs/                  # Engine, parser, systems, IDE modules
 ├── tests/                    # Pytest suites covering parser & systems
+├── acs_engine_enhanced.py    # Legacy CLI entry point (kept for playback)
 ├── quickstart.sh             # Menu for common launch tasks
-└── LICENSE                   # MIT license text
+├── README.md                 # Project overview
+└── START_HERE.md             # Onboarding checklist
 ```
 
 For a narrated walkthrough see [PROJECT_STRUCTURE.md](PROJECT_STRUCTURE.md).
@@ -152,3 +146,4 @@ Pull requests are welcome! Review the coding standards, testing expectations, an
 ## 📜 License
 
 Distributed under the [MIT License](LICENSE). Crafted with ❤️ by Honey Badger Universe.
+

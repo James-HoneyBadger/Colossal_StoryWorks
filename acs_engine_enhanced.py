@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Adventure Construction Set - Enhanced Game Engine
+Colossal StoryWorks - Enhanced Game Engine
 Extended features for rich interactive fiction experiences
 """
 

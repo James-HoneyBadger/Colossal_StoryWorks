@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Adventure Construction Set - Achievement & Statistics System
+Colossal StoryWorks - Achievement & Statistics System
 Tracks player progress, unlocks achievements, and maintains statistics
 """
 

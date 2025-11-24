@@ -1,4 +1,4 @@
-# Adventure Construction Set - Technical Reference
+# Colossal StoryWorks - Technical Reference
 
 **Version 2.0**  
 **Copyright © 2025 Honey Badger Universe**  
@@ -25,7 +25,7 @@
 
 ### System Design
 
-The Adventure Construction Set (ACS) follows a modular, event-driven architecture:
+Colossal StoryWorks follows a modular, event-driven architecture:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -62,7 +62,7 @@ The Adventure Construction Set (ACS) follows a modular, event-driven architectur
 ### Directory Structure
 
 ```
-HB_Adventure_Games/
+Colossal_StoryWorks/
 ├── src/acs/                # Application source code (package)
 │   ├── core/               # Engine, parser, state, event infrastructure
 │   ├── data/               # Config/data services (IO, persistence)

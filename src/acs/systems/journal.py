@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Adventure Construction Set - Journal & Note-Taking System
+Colossal StoryWorks - Journal & Note-Taking System
 Automatic event logging, manual notes, quest tracking, and map annotations
 """
 

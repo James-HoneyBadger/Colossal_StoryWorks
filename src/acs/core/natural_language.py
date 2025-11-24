@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-Adventure Construction Set - Natural Language Parser
+Colossal StoryWorks - Natural Language Parser
 Inspired by Inform 7's natural language understanding capabilities.
 
 This module provides enhanced natural language processing for command
-interpretation, similar to Inform 7's approach but adapted for ACS.
+interpretation, similar to Inform 7's approach but adapted for Colossal StoryWorks.
 """
 
 from typing import Dict, List, Tuple, Optional, Set
@@ -46,7 +46,7 @@ class InformStyleParser:
     Natural language parser inspired by Inform 7's understanding system.
 
     Inform 7 excels at understanding varied phrasings and natural
-    language. This parser brings similar capabilities to ACS.
+    language. This parser brings similar capabilities to Colossal StoryWorks.
     """
 
     def __init__(self):
@@ -333,7 +333,7 @@ class InformStyleWorld:
     World model inspired by Inform 7's knowledge representation.
 
     Inform 7 tracks relationships, properties, and kinds. This class
-    provides similar capabilities for ACS.
+    provides similar capabilities for Colossal StoryWorks.
     """
 
     def __init__(self):

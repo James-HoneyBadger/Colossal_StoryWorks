@@ -2,7 +2,7 @@
 
 ## Natural Language Understanding
 
-The Adventure Construction Set now includes an enhanced parser that understands natural language commands!
+The Colossal StoryWorks now includes an enhanced parser that understands natural language commands!
 
 ### Examples of Natural Language:
 

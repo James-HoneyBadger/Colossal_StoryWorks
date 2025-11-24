@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Adventure Construction Set - Accessibility Features
+Colossal StoryWorks - Accessibility Features
 Difficulty settings, display options, and inclusive design
 """
 

@@ -319,11 +319,10 @@ The IDE works seamlessly with command-line tools:
 
 ```bash
 # Create in IDE, test from command line
-./play_adventure.sh my_adventure.json
+python -m src.acs.core.engine adventures/my_adventure.json
 
-# Import DSK, edit in IDE
-./convert_dsk.sh old_adventure.dsk
-./launch_ide.sh  # Open and edit
+# Launch the IDE directly
+python -m src.acs.ui.ide
 
 # Validate from command line
 python -m json.tool adventures/my_adventure.json

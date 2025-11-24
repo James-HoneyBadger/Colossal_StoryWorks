@@ -2,7 +2,7 @@
 
 ## Mission
 
-Transform the Adventure Construction Set from a monolithic architecture to a fully modular, plugin-based system that is easy to maintain, extend, and adapt for future features.
+Transform the Colossal StoryWorks from a monolithic architecture to a fully modular, plugin-based system that is easy to maintain, extend, and adapt for future features.
 
 ## Progress Overview
 
@@ -151,8 +151,8 @@ Create a wrapper that makes the new engine compatible with the old `acs_engine_e
 
 2. **Update Entry Points** (1 hour)
    - `python -m src.acs.ui.ide` - Use new engine
-   - `python -m src.acs.ui.ide` - Use new engine or wrapper
-   - `play_adventure.sh` - Update imports
+   - `python -m src.acs.core.engine` - Provide CLI gameplay entry point
+   - Ensure any helper scripts delegate to these modules
 
 3. **Test Backward Compatibility** (1 hour)
    - Load existing adventures
@@ -437,7 +437,7 @@ tests/
 
 ## Resources
 
-- **Code:** `/home/james/HB_Adventure_Games/`
+- **Code:** `/home/james/Colossal_StoryWorks/`
 - **Docs:** `ARCHITECTURE.md`, `PLUGIN_GUIDE.md`
 - **Demo:** `demo_architecture.py`
 - **Original:** `acs_*.py` files (reference)

@@ -53,7 +53,7 @@ class AchievementsPlugin(BasePlugin):
         metadata = PluginMetadata(
             name="achievements",
             version="2.0",
-            author="ACS Team",
+            author="Colossal StoryWorks Team",
             description="Achievement and statistics tracking system",
             dependencies=[],
             priority=PluginPriority.NORMAL,

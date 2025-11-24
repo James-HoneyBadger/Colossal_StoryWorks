@@ -1,4 +1,4 @@
-# Adventure Construction Set - User Manual
+# Colossal StoryWorks - User Manual
 
 **Version 2.0**  
 **Copyright © 2025 Honey Badger Universe**  
@@ -23,9 +23,9 @@
 
 ## Introduction
 
-### What is the Adventure Construction Set?
+### What is the Colossal StoryWorks?
 
-The Adventure Construction Set (ACS) is a powerful, modern system for creating and playing text adventures with:
+Colossal StoryWorks is a powerful, modern system for creating and playing text adventures with:
 
 - **Modern Python Implementation** - Clean, maintainable code
 - **Graphical IDE** - Create adventures without programming
@@ -57,7 +57,7 @@ The Adventure Construction Set (ACS) is a powerful, modern system for creating a
 
 ```bash
 # Clone or download the repository
-cd HB_Adventure_Games
+cd Colossal_StoryWorks
 
 # (Optional) Create a virtual environment and install tooling
 python3 -m venv .venv
@@ -72,7 +72,7 @@ Want shortcuts? Run `./quickstart.sh` and choose **Launch IDE**.
 
 ### Manual Setup
 
-1. **Download** the HB_Adventure_Games directory
+1. **Download** the Colossal_StoryWorks directory
 2. **Open** a terminal in that directory
 3. **Run** `python -m src.acs.ui.ide`
 
@@ -579,7 +579,7 @@ python -m src.acs.ui.ide
 
 **Direct Play**:
 ```bash
-./bin/play_adventure.sh adventures/my_adventure.json
+python -m src.acs.core.engine adventures/my_adventure.json
 ```
 
 ### Game Interface
@@ -807,7 +807,7 @@ Add custom features via plugins:
 
 **Contact**:
 - Email: support@honeybadgeruniverse.com
-- GitHub: github.com/James-HoneyBadger/HB_Adventure_Games
+- GitHub: github.com/James-HoneyBadger/Colossal_StoryWorks
 
 ---
 

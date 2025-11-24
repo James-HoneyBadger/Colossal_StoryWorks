@@ -159,7 +159,7 @@ class ConfigService(Service):
         """Save default engine configuration"""
         default_config = {
             "engine": {
-                "name": "Adventure Construction Set",
+                "name": "Colossal StoryWorks",
                 "version": "2.0",
                 "enable_event_history": False,
             },
